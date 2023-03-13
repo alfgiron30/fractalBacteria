@@ -28,7 +28,7 @@ public class Fractal extends JPanel {
 
     @Override
     public void paint(Graphics g) {
-        inicialFractal(g, this.getWidth(), this.getHeight(), 60, 5);
+        inicialFractal(g, this.getWidth(), this.getHeight(), 40, 5);
     }
 
     public void inicialFractal(Graphics g, int w, int h, int radio, int nivel) {
@@ -179,8 +179,8 @@ public class Fractal extends JPanel {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Fractal EGAM");
         frame.setBackground(Color.decode("#2f5c58"));
-        frame.add(new Fractal(Color.decode("#28f016"), Color.decode("#fadf92"), Color.magenta, Color.white, Color.decode("#34403e")));
-        frame.setSize(1000, 1000);
+        frame.add(new Fractal(Color.decode("#25760D"), Color.decode("#FCFB9F"), Color.decode("#C19C67"), Color.decode("#FFFF00"), Color.decode("#000000")));
+        frame.setSize(700, 700);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
